@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+body {
+  @apply bg-gradient-to-br from-gray-300 via-gray-100 to-gray-300;
+}
+
+.active{
+   color:rgb(4, 4, 95);
+   
+
+}
