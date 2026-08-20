@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { loginschema } from '../../schema/loginSchema';
+import { loginSchema } from '../../Schema/loginSchema';
 import { AuthContext } from '../../Context/AuthContext';
 
 
