@@ -26,7 +26,7 @@ const {register , handleSubmit , setError , formState}=  useForm({
  
     },
     mode:'onBlur' ,
-    resolver : zodResolver(loginschema)
+    resolver : zodResolver(LoginSchema)
   })
 
 

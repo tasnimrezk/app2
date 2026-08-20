@@ -2,7 +2,7 @@ import * as zod  from 'zod'
 
 import { zodResolver } from '@hookform/resolvers/zod';
 
-export let loginschema= zod.object({
+export let LoginSchema= zod.object({
   
 
   email : zod.string().nonempty('Email Required').email('Inavlid Email') ,

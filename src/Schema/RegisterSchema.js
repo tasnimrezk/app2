@@ -2,7 +2,7 @@ import * as zod  from 'zod'
 
 import { zodResolver } from '@hookform/resolvers/zod';
 
-export let schema= zod.object({
+export let Schema= zod.object({
   name : zod.string().nonempty('Name is required').min(3 , 'Min 3 Letters').max(8 , 'Max 8 Letters') ,
     username : zod.string().nonempty('user Name is required').regex(/^[A-Z][a-z0-9]{5,10}$/ , 'Invalid user Name'),
 

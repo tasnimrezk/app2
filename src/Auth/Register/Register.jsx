@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from 'react'
 import { Button, Input } from '@heroui/react';
 import {Label, ListBox, Select} from "@heroui/react";
 import { useForm } from 'react-hook-form';
-import { schema } from '../../schema/registerShema';
+import { Schema } from '../../Schema/RegisterSchema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -32,7 +32,7 @@ const {register , handleSubmit , setError , formState}=  useForm({
     gender:''
     },
     mode:'onBlur' ,
-    resolver : zodResolver(schema)
+    resolver : zodResolver(Schema)
   })
 
 
